@@ -8,10 +8,10 @@ def game_start():
       print('"Great! Lets go!"\n')
       print('Heading to ' + location)
       print('\n What a lovely day...\n')
-      print('...')
+      print('...\n')
+      break
       print('"STOP! DO NOT GO ANY FURTHER"\n "Sorry, we are now closing...\n')
       print('B...but I just got here...\n')
-      break
       first_location()
 
 def first_location():
