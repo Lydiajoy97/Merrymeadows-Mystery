@@ -1,7 +1,7 @@
 # Game is set in a funfair. Player gives their tickets to enter. 
 # There are three suspects in this game
-suspects = ["Clara", "The Major", "Count Chrispin"]
-locations = []
+suspects = []
+weapons = []
 
 def game_start():
       print('"Tickets please... Tickets.. Hi, thank you..Oh! Hello, you must be new!\n Welcome to Merrymeadows funfair. My name is Lucy. What is your name?"\n')
@@ -30,7 +30,22 @@ def first_location():
           print('"Hmm, I probably should speak to Clara..."')
           find_clara()           
 
-# def find_clara():
+def find_clara():
+# Daughter of Lady Amara, spolit and just got her inheritence. She claims to have spoken to the major at the fun fair. 
+     print("'Heading to Clara's house...")
+     print("Hmm, Shall I ask Clara where she was or shall I ask who she was with when her mother died?")
+     question_answer = input('where or who?')
+     if question_answer == "where":
+          print('"Well Obviously I was at the funfair... like the rest of the town silly! I was going to meet my mother... she said I can go on all the rides with her and use up my allowence. The sad thing is I now have no mother and a huge allowence."')
+          print("Hmm, someone must have seen her.")
+          print('"Did anyone see you Clara?"')
+          clara_who()
+     if question_answer == "who":
+          def clara_who():
+               print('"I did say hi to the major, but he was probably too busy to see me."')
+               print("Adding Clara to list of suspects...")
+               suspects.append("Clara")
+               print("Going to find the major...")
 
 # def find_the_major():
 
@@ -40,7 +55,8 @@ def main():
       game_start()
       walk()
       first_location()
-     # findclara()
+      find_clara()
+      clara_who()
      # find_the_major()
      # find_count_crispin()
 
