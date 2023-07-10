@@ -7,7 +7,6 @@ def game_start():
       location = input('Where would you like to go first? The lace market, Merry-go-round, or the farm shop? \n')
       print('"Great! Lets go!"\n')
       print('Heading to ' + location)
-      break 
       walk()
 
 def walk():
