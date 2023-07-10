@@ -10,14 +10,14 @@ def game_start():
       walk()
 
 def walk():
- print('...\n')
- print('"STOP! DO NOT GO ANY FURTHER"\n "Sorry, we are now closing...\n')
- first_location()
+      print('...\n')
+      print('"STOP! DO NOT GO ANY FURTHER"\n "Sorry, we are now closing...\n')
+      first_location()
 
 def first_location():
-  print('Amidst the radiant sunbeams that bathed the vibrant medieval fairgrounds of MerryMeadow, the joyful atmosphere of the fair seemed unbreakable.\nColorful pennants fluttered merrily in the breeze, mingling with the tantalizing aroma of caramelized apples and freshly spun cotton candy.\n Laughter and music filled the air, and chatter echoed across the bustling fair. But hidden beneath the facade of delight, a dark shadow had cast its spell over the festivities.\n Lady Amara, beloved by all the folk of Merrymeadow, had been discovered dead within her regal tent, her crown askew and a haunting mystery in the air.')
-  print('Are you ready to uncover the truth of Merrymeadow?\n')
-  answer = input('Please answer yes or no: \n')
+       print('Amidst the radiant sunbeams that bathed the vibrant medieval fairgrounds of MerryMeadow, the joyful atmosphere of the fair seemed unbreakable.\nColorful pennants fluttered merrily in the breeze, mingling with the tantalizing aroma of caramelized apples and freshly spun cotton candy.\n Laughter and music filled the air, and chatter echoed across the bustling fair. But hidden beneath the facade of delight, a dark shadow had cast its spell over the festivities.\n Lady Amara, beloved by all the folk of Merrymeadow, had been discovered dead within her regal tent, her crown askew and a haunting mystery in the air.')
+       print('Are you ready to uncover the truth of Merrymeadow?\n')
+       answer = input('Please answer yes or no: \n')
 
   if answer == "yes": 
        print('Lady Amara was discovered by her daughter in law Clara.\n Go find Clara?')
