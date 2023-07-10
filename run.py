@@ -19,23 +19,16 @@ def walk():
       first_location()
 
 def first_location():
-     print =('Amidst the radiant sunbeams that bathed the vibrant medieval fairgrounds of MerryMeadow, the joyful atmosphere of the fair seemed unbreakable.\nColorful pennants fluttered merrily in the breeze, mingling with the tantalizing aroma of caramelized apples and freshly spun cotton candy. Laughter and music filled the air, and chatter echoed across the bustling fair. But hidden beneath the facade of delight, a dark shadow had cast its spell over the festivities. Lady Amara, beloved by all the folk of Merrymeadow, had been discovered dead within her regal tent, her crown askew and a haunting mystery in the air.')
-     input = ('Are you ready to uncover the truth of Merrymeadow? Yes or No?')
-     input = yes
-     while True: 
-          print('Lady Amara was discovered by her daughter in law Clara.')
-          print = input('Find Clara?')
-          input = yes
-          while True :
-               find_clara()
-     else:
+     print('Amidst the radiant sunbeams that bathed the vibrant medieval fairgrounds of MerryMeadow, the joyful atmosphere of the fair seemed unbreakable.\nColorful pennants fluttered merrily in the breeze, mingling with the tantalizing aroma of caramelized apples and freshly spun cotton candy. Laughter and music filled the air, and chatter echoed across the bustling fair. But hidden beneath the facade of delight, a dark shadow had cast its spell over the festivities. Lady Amara, beloved by all the folk of Merrymeadow, had been discovered dead within her regal tent, her crown askew and a haunting mystery in the air.')
+     print('Are you ready to uncover the truth of Merrymeadow?...\n')
+     print('Lady Amara was discovered by her daughter in law Clara.\n', '"Hmmm, I wonder if Clara knows anything."')
+     accept = input('Find Clara?')
+     if accept == "yes":
+          find_clara()
+     if accept == "no":
           print('Not up for the challenge?... heading back home.')
-          input = ('Would you like to head back to town? \n')
-          input = yes
-          if answer == yes :
-               main()
-          if answer == no :
-               print('Game Over.')              
+          print('"Hmm, I probably should speak to Clara..."')
+          find_clara()           
 
 # def find_clara():
 
