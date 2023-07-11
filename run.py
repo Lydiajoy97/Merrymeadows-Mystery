@@ -101,7 +101,36 @@ def find_the_major():
                print("Going to find Count Chrispin...")
                find_count_crispin()
 
-# def find_Count_Crispin():
+def find_count_crispin():
+     print("Going to find Count Crispin...")
+     print('"Who is it?! I do not want company right now. Go away."')
+     print('You spoke to the Major... DO NOT TALK ABOUT THAT MAN TO ME!')
+     count_question = input("Question Count Chrispin on his whereabouts the morning she died? Y/N\n")
+     #Bite video tutorial used to help write while loops
+     while True: 
+          if count_question.lower().strip() != "y" and count_question.lower().strip() != "n":
+               print("Sorry, I didn't quit catch that...Please try again\n")
+               continue 
+          else : 
+               break
+     if count_question.lower().strip() == "y":
+          print('"I can not believe you would be this insenstive. I was with my wife. Until..."', "Until...that man decided decided to surprise her with breakfast in the tent. That's when I found out about the affair.")
+          secound = input("Ask another question? Y/N\n")
+          while True: 
+               if secound.lower().strip() != "y" and thought.lower().strip() != "n":
+                    print("Sorry, I didn't quit catch that...Please try again\n")
+                    continue 
+               else : 
+                    break
+          if secound.lower().strip() == "y":
+               print('"Sir, did you get angry?"')
+               print('"Of course I got angry. Anyone would! I still am. That was my wife!"')
+               print("Adding Count Chrispin to list of suspects...")
+               suspects.append("Count Chrispin")
+          elif secound.lower().strip() == "n":
+               print('"I better get going."')
+               print("hmmm, if that were me I would get pretty angry. Maybe it was a crime of passion?... Adding Count Chrispin to list of suspects...")
+               suspects.append("Count Chrispin")
 
 def main():
      game_start()
@@ -110,5 +139,7 @@ def main():
      find_clara()
      find_the_major()
      find_count_crispin()
+     recall_suspects()
+     finale()
 
 main()
