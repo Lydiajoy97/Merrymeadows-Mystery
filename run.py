@@ -23,28 +23,35 @@ def first_location():
      print('Are you ready to uncover the truth of Merrymeadow?...\n')
      print('Lady Amara was discovered by her daughter in law Clara.\n', '"Hmmm, I wonder if Clara knows anything."')
      accept = input('Find Clara?')
-     if accept.lower().strip() == "yes":
-          find_clara()
-     if accept.lower().strip() == "no":
-          print('Not up for the challenge?... heading back home.')
-          print('"Hmm, I probably should speak to Clara..."')
-          find_clara()
      while True: 
           accept = input('Find Clara?')
 
-          if question_answer.lower().strip() != "yes":
-               print("Sorry, I didn't quit catch that...Please try again\n")
-          if question_answer.lower().strip() != "no":
+          if accept.lower().strip() != "yes" and accept.lower().strip() != "no":
                print("Sorry, I didn't quit catch that...Please try again\n")
                continue 
           else : 
                break
 
+     if accept.lower().strip() == "yes":
+          find_clara()
+     elif accept.lower().strip() == "no":
+          print('Not up for the challenge?... heading back home.')
+          print('"Hmm, I probably should speak to Clara..."')
+          find_clara()
+    
 def find_clara():
 # Daughter of Lady Amara, spolit and just got her inheritence. She claims to have spoken to the major at the fun fair. 
      print("'Heading to Clara's house...")
      print("Hmm, Shall I ask Clara where she was or shall I ask who she was with when her mother died?")
      question_answer = input('where or who?')
+     while True: 
+          question_answer = input('where or who?')
+          if question_answer.lower().strip() != "where" and question_answer.lower().strip() != "who":
+               print("Sorry, I didn't quit catch that...Please try again\n")
+               continue 
+          else : 
+               break
+
      if question_answer.lower().strip() == "where":
           print('"Well Obviously I was at the funfair... like the rest of the town silly! I was going to meet my mother... she said I can go on all the rides with her and use up my allowence. The sad thing is I now have no mother and a huge allowence."')
           print("Hmm, someone must have seen her.")
@@ -53,22 +60,12 @@ def find_clara():
           print("Adding Clara to list of suspects...")
           suspects.append("Clara")
           print("Going to find the major...")
-     if question_answer.lower().strip() == "who":
+     elif question_answer.lower().strip() == "who":
           print('"I did say hi to the major, but he was probably too busy to see me."')
           print("Adding Clara to list of suspects...")
           suspects.append("Clara")
           print("Going to find the major...")
-     while True: 
-          question_answer = input('where or who?')
-
-          if question_answer.lower().strip() != "where":
-               print("Sorry, I didn't quit catch that...Please try again\n")
-          if question_answer.lower().strip() != "who":
-               print("Sorry, I didn't quit catch that...Please try again\n")
-               continue 
-          else : 
-               break
-
+     
 # def find_the_major():
 
 # def find_Count_Crispin():
