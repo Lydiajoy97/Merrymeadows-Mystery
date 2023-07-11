@@ -53,13 +53,13 @@ def find_clara():
           print('"Well Obviously I was at the funfair... like the rest of the town silly! I was going to meet my mother... she said I can go on all the rides with her and use up my allowence. The sad thing is I now have no mother and a huge allowence."')
           print("Hmm, someone must have seen her.")
           print('"Did anyone see you Clara?"')
-          print('"I did say hi to the major, but he was probably too busy to see me."')
+          print('"I did say hi to the major, but he was probably too busy to see me. He looked like he was in a rush."')
           print("Adding Clara to list of suspects...")
           suspects.append("Clara")
           print("Going to find the major...")
           find_the_major()
      elif question_answer.lower().strip() == "who":
-          print('"I did say hi to the major, but he was probably too busy to see me."')
+          print('"I did say hi to the major, but he was probably too busy to see me. He looked like he was in a rush."')
           print("Adding Clara to list of suspects...")
           suspects.append("Clara")
           print("Going to find the major...")
@@ -68,7 +68,7 @@ def find_clara():
 def find_the_major():
      print("'Heading to The Major's house...")
      print('"Oh Hi! I dont think I was expecting company... erm do come in."')
-     print('"How well did I know Lady Amara? Well, we worked together. Strickly professional."')
+     print('"How well did I know Lady Amara? Well, we worked together. Strictly professional."')
      thought = input("Do you want to ask where he was the day Lady Amara died? Y/N?\n")
      #Bite video tutorial used to help write while loops
      while True: 
@@ -123,13 +123,51 @@ def find_count_crispin():
                     break
           if secound.lower().strip() == "y":
                print('"Sir, did you get angry?"')
-               print('"Of course I got angry. Anyone would! I still am. That was my wife!"')
+               print('"Of course I got angry. Anyone would! I still am. That was my wife! I dont remember much about that morning. I stormed off after I found them."')
                print("Adding Count Chrispin to list of suspects...")
                suspects.append("Count Chrispin")
+               recall_suspects()
           elif secound.lower().strip() == "n":
                print('"I better get going."')
                print("hmmm, if that were me I would get pretty angry. Maybe it was a crime of passion?... Adding Count Chrispin to list of suspects...")
                suspects.append("Count Chrispin")
+               recall_suspects()
+
+def recall_suspects():
+     print('Okay.. who are my suspects...', suspects)
+     innocent = input('Whose story was most believeable and therefore innocent?', suspects)
+     while True :
+          if innocent.lower().strip() != "count chrispin" and innocent.lower().strip() != "Clara" and innocent.lower().strip() != "major":
+                    print("Did you spell their names correctly? Please try again.\n")
+                    continue 
+               else : 
+                    break
+     if innocent.lower().strip() == "count chrispin":
+          print('Count Chrispin must be innocent. He loved her too much... But I think I know who it might be.')
+     elif innocent.lower().strip() == "major":
+          print('He was angry at Count Chrispin not Lady Amara.')
+     elif innocent.lower().strip() == "Clara":
+          print('There is no way her daughter did it.')
+     #user will type who is guilty here      
+     guilty = input('Who do you think is guilty?...\n')
+          while True:
+          if guilty.lower().strip() != "count chrispin" and innocent.lower().strip() != "Clara" and innocent.lower().strip() != "major":
+                    print("Did you spell their names correctly? Please try again.\n")
+                    continue 
+               else : 
+                    break
+                    finale()
+          
+def finale():
+     print('"so, you think the murderer was"', guilty)
+     if guilty == "major":
+          print('"Okay! I confess! It was me! She was going to expose us, so I put posin in her breakfast. I would have lost everything!"')
+     else guilty == "count chrispin":
+          print("But Count Chrispin was not the last to see Lady Amara, he stormed off. It can't have been him.")
+     else guilty == "clara":
+          print("Clara was seen by a lot of people at the funfair. She's such a public figure, she was not seen any where near her mums tent.")
+     print('The Major was charged for the murder of Lady Amara. Traces of posin were found in the autopsy. A letter addressed to the major was found on the corpse.')
+     print('To my dearest Carter, I have to come clean to my husband. Our secret is killing me. I will love you always.')
 
 def main():
      game_start()
