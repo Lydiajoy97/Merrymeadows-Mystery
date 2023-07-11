@@ -67,7 +67,7 @@ def find_clara():
           suspects.append("Clara")
           print("Going to find the major...")
      
-# def find_the_major():
+def find_the_major():
 print("'Heading to The Major's house...")
      print('"Oh Hi! I dont think I was expecting company... erm do come in."')
      print('"How well did I know Lady Amara? Well, we worked together. Strickly professional."')
@@ -86,7 +86,7 @@ print("'Heading to The Major's house...")
           secound_thought = input("Ask another question? Y/N")
            while True: 
           secound_thought = input("Ask another question? Y/N")
-          if question_answer.lower().strip() != "y" and question_answer.lower().strip() != "n":
+          if secound_thought.lower().strip() != "y" and secound_thought.lower().strip() != "n":
                print("Sorry, I didn't quit catch that...Please try again\n")
                continue 
           else : 
@@ -98,20 +98,20 @@ print("'Heading to The Major's house...")
                suspects.append("The Major")
                print('I think I need to pay her husband a visit..')
                print("Going to find Count Chrispin...")
-     elif question_answer.lower().strip() == "n":
-          print('"I did say hi to the major, but he was probably too busy to see me."')
-          print("Adding Clara to list of suspects...")
+     elif secound_thought.lower().strip() == "n":
+          print('"I do not want to cause any drama, but you should probably talk to her husband. He was pretty angry after finding out Lady Amara and I...."', '"Nevermind! Ignore me!"')
+          print("That was odd... Adding The Major to list of suspects...")
           suspects.append("The major")
           print("Going to find Count Chrispin...")
 
 # def find_Count_Crispin():
 
 def main():
-      game_start()
-      walk()
-      first_location()
-      find_clara()
-     # find_the_major()
-     # find_count_crispin()
+     game_start()
+     walk()
+     first_location()
+     find_clara()
+     find_the_major()
+     find_count_crispin()
 
 main()
