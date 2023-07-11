@@ -24,17 +24,17 @@ def first_location():
      print('Lady Amara was discovered by her daughter in law Clara.\n', '"Hmmm, I wonder if Clara knows anything."')
      accept = input('Find Clara?')
      while True: 
-          accept = input('Find Clara?')
+          accept = input('Find Clara? Y/N')
 
-          if accept.lower().strip() != "yes" and accept.lower().strip() != "no":
+          if accept.lower().strip() != "y" and accept.lower().strip() != "n":
                print("Sorry, I didn't quit catch that...Please try again\n")
                continue 
           else : 
                break
 
-     if accept.lower().strip() == "yes":
+     if accept.lower().strip() == "y":
           find_clara()
-     elif accept.lower().strip() == "no":
+     elif accept.lower().strip() == "n":
           print('Not up for the challenge?... heading back home.')
           print('"Hmm, I probably should speak to Clara..."')
           find_clara()
@@ -44,6 +44,7 @@ def find_clara():
      print("'Heading to Clara's house...")
      print("Hmm, Shall I ask Clara where she was or shall I ask who she was with when her mother died?")
      question_answer = input('where or who?')
+     #Bite video tutorial used to help write while loops
      while True: 
           question_answer = input('where or who?')
           if question_answer.lower().strip() != "where" and question_answer.lower().strip() != "who":
@@ -67,6 +68,41 @@ def find_clara():
           print("Going to find the major...")
      
 # def find_the_major():
+print("'Heading to The Major's house...")
+     print('"Oh Hi! I dont think I was expecting company... erm do come in."')
+     print('"How well did I know Lady Amara? Well, we worked together. Strickly professional."')
+     thought = input("Do you want to ask where he was the day Lady Amara died? Y/N?\n")
+     #Bite video tutorial used to help write while loops
+     while True: 
+          question_answer = input("Do you want to ask where he was the day Lady Amara died? Y/N?")
+          if question_answer.lower().strip() != "y" and question_answer.lower().strip() != "n":
+               print("Sorry, I didn't quit catch that...Please try again\n")
+               continue 
+          else : 
+               break
+
+     if question_answer.lower().strip() == "y":
+          print('Ha! I was at the funfair... and she was fine when I saw her... I mean... The day before, we ran though the finaces!')
+          secound_thought = input("Ask another question? Y/N")
+           while True: 
+          secound_thought = input("Ask another question? Y/N")
+          if question_answer.lower().strip() != "y" and question_answer.lower().strip() != "n":
+               print("Sorry, I didn't quit catch that...Please try again\n")
+               continue 
+          else : 
+               break
+          if secound_thought.lower().strip() == "y":
+               print('"Sir, when was the last time you saw Lady Amara?"')
+               print('"Alright! Fine! I was with her that morning... were having an affiar, but we had ended it. She was going to tell her husband! Count Chrispin is my friend you see... And when he saw us.\n Oh, I have shared to much. Please do not say a word! My reputation is on the line."')
+               print("Adding the Major to list of suspects...")
+               suspects.append("The Major")
+               print('I think I need to pay her husband a visit..')
+               print("Going to find Count Chrispin...")
+     elif question_answer.lower().strip() == "n":
+          print('"I did say hi to the major, but he was probably too busy to see me."')
+          print("Adding Clara to list of suspects...")
+          suspects.append("The major")
+          print("Going to find Count Chrispin...")
 
 # def find_Count_Crispin():
 
