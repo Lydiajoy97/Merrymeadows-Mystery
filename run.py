@@ -48,6 +48,14 @@ def find_clara():
           print("Adding Clara to list of suspects...")
           suspects.append("Clara")
           print("Going to find the major...")
+     while True: 
+          question_answer = input('where or who?')
+
+          if question_answer.lower().strip() != "where":
+               print("Sorry, I didn't quit catch that...Please try again\n")
+          if question_answer.lower().strip() != "who":
+               print("Sorry, I didn't quit catch that...Please try again\n")
+               continue 
 
 # def find_the_major():
 
