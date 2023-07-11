@@ -30,15 +30,15 @@ def first_location():
           print('"Hmm, I probably should speak to Clara..."')
           find_clara()
      while True: 
-     accept = input('Find Clara?')
+          accept = input('Find Clara?')
 
-     if question_answer.lower().strip() != "yes":
-          print("Sorry, I didn't quit catch that...Please try again\n")
-     if question_answer.lower().strip() != "no":
-          print("Sorry, I didn't quit catch that...Please try again\n")
-          continue 
-     else : 
-          break
+          if question_answer.lower().strip() != "yes":
+               print("Sorry, I didn't quit catch that...Please try again\n")
+          if question_answer.lower().strip() != "no":
+               print("Sorry, I didn't quit catch that...Please try again\n")
+               continue 
+          else : 
+               break
 
 def find_clara():
 # Daughter of Lady Amara, spolit and just got her inheritence. She claims to have spoken to the major at the fun fair. 
