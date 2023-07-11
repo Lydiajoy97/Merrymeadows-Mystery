@@ -6,7 +6,7 @@ weapons = []
 def game_start():
       print('"Tickets please... Tickets.. Hi, thank you..Oh! Hello, you must be new!\n Welcome to Merrymeadows funfair. My name is Lucy. What is your name?"\n')
       name = input('Please Enter your name:\n ')
-      print('"Hi,' + name ,'"')
+      print('"Hi,' + name.title(),'"')
       print('Where would you like to go first?',"The Lace market, The Merry-go-round, or The farm shop")
       travel = input()   
       print('"Great! Lets go!"')
