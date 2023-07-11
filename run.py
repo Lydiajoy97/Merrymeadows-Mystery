@@ -78,7 +78,7 @@ def find_the_major():
           else : 
                break
      if thought.lower().strip() == "y":
-          print('Ha! I was at the funfair... and she was fine when I saw her... I mean... The day before, we ran though the finaces!')
+          print('"Ha! I was at the funfair... and she was fine when I saw her... I mean... The day before, we ran though the finaces!"')
           secound_thought = input("Ask another question? Y/N\n")
           while True: 
                if secound_thought.lower().strip() != "y" and secound_thought.lower().strip() != "n":
@@ -102,7 +102,6 @@ def find_the_major():
                find_count_crispin()
 
 def find_count_crispin():
-     print("Going to find Count Crispin...")
      print('"Who is it?! I do not want company right now. Go away."')
      print('You spoke to the Major... DO NOT TALK ABOUT THAT MAN TO ME!')
      count_question = input("Question Count Chrispin on his whereabouts the morning she died? Y/N\n")
@@ -114,7 +113,7 @@ def find_count_crispin():
           else : 
                break
      if count_question.lower().strip() == "y":
-          print('"I can not believe you would be this insenstive. I was with my wife. Until..."', "Until...that man decided decided to surprise her with breakfast in the tent. That's when I found out about the affair.")
+          print('"I can not believe you would be this insenstive. I was with my wife. Until..."', '"Until...that man decided decided to surprise her with breakfast in the tent. That is when I found out about the affair."')
           secound = input("Ask another question? Y/N\n")
           while True: 
                if secound.lower().strip() != "y" and thought.lower().strip() != "n":
