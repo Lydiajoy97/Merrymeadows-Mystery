@@ -39,13 +39,15 @@ def find_clara():
           print('"Well Obviously I was at the funfair... like the rest of the town silly! I was going to meet my mother... she said I can go on all the rides with her and use up my allowence. The sad thing is I now have no mother and a huge allowence."')
           print("Hmm, someone must have seen her.")
           print('"Did anyone see you Clara?"')
-          clara_who()
+          print('"I did say hi to the major, but he was probably too busy to see me."')
+          print("Adding Clara to list of suspects...")
+          suspects.append("Clara")
+          print("Going to find the major...")
      if question_answer.lower().strip() == "who":
-          def clara_who():
-               print('"I did say hi to the major, but he was probably too busy to see me."')
-               print("Adding Clara to list of suspects...")
-               suspects.append("Clara")
-               print("Going to find the major...")
+          print('"I did say hi to the major, but he was probably too busy to see me."')
+          print("Adding Clara to list of suspects...")
+          suspects.append("Clara")
+          print("Going to find the major...")
 
 # def find_the_major():
 
@@ -56,7 +58,6 @@ def main():
       walk()
       first_location()
       find_clara()
-      clara_who()
      # find_the_major()
      # find_count_crispin()
 
