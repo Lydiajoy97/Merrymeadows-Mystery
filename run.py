@@ -23,9 +23,9 @@ def first_location():
      print('Are you ready to uncover the truth of Merrymeadow?...\n')
      print('Lady Amara was discovered by her daughter in law Clara.\n', '"Hmmm, I wonder if Clara knows anything."')
      accept = input('Find Clara?')
-     if accept == "yes":
+     if accept.lower().strip() == "yes":
           find_clara()
-     if accept == "no":
+     if accept.lower().strip() == "no":
           print('Not up for the challenge?... heading back home.')
           print('"Hmm, I probably should speak to Clara..."')
           find_clara()           
@@ -35,12 +35,12 @@ def find_clara():
      print("'Heading to Clara's house...")
      print("Hmm, Shall I ask Clara where she was or shall I ask who she was with when her mother died?")
      question_answer = input('where or who?')
-     if question_answer == "where":
+     if question_answer.lower().strip() == "where":
           print('"Well Obviously I was at the funfair... like the rest of the town silly! I was going to meet my mother... she said I can go on all the rides with her and use up my allowence. The sad thing is I now have no mother and a huge allowence."')
           print("Hmm, someone must have seen her.")
           print('"Did anyone see you Clara?"')
           clara_who()
-     if question_answer == "who":
+     if question_answer.lower().strip() == "who":
           def clara_who():
                print('"I did say hi to the major, but he was probably too busy to see me."')
                print("Adding Clara to list of suspects...")
