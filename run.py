@@ -1,8 +1,7 @@
-# Game is set in a funfair. Player gives their tickets to enter. 
-# There are three suspects in this game
+# List of suspects that user will add to throught the game.
 suspects = []
-weapons = []
 
+# typewriter effect for story script
 import time
 import sys
 
