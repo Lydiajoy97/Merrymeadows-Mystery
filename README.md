@@ -43,3 +43,14 @@ Summary:
 
 Testing Results:
 
+# Deployment 
+This Code is depolyed to Heroku. 
+To do this I opened an Heroku account and clicked the add app feature. I then linked the account to my git hub pages and deplyed the game.
+
+# Credits 
+
+Multi line statement: 
+https://www.geeksforgeeks.org/python-multi-line-statements/
+
+For while loops tutorial:
+https://www.youtube.com/watch?v=AWcdk5uoxeg
