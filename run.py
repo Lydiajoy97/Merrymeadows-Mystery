@@ -25,9 +25,7 @@ def game_start():
     or The farm shop?')
     travel = input()
     while True:
-        if travel.lower().strip() != "the lace market" and
-        travel.lower().strip() != "the rides" and
-        travel.lower().strip() != "the farm shop":
+        if travel.lower().strip() != "the lace market" and travel.lower().strip() != "the rides" and travel.lower().strip() != "the farm shop":
             print("Did you spell the places correctly? Please try again.")
             travel = input('Where would you like to go?...\n')
             else:
