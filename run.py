@@ -16,9 +16,9 @@ def typewriter(text, delay=0.1):
 def game_start():
       typewriter('"Tickets please... Tickets.. Hi, thank you..Oh! Hello, you must be new!\
       Welcome to Merrymeadows funfair. My name is Lucy. What is your name?"\n')
-      name = input('Please Enter your name:\n ')
-      typewriter('"Hi,'+ name.title(),'"')
-      typewriter('Where would you like to go first?',"The Lace market, The rides, or The farm shop")
+      name = input('Please Enter your name:\n')
+      print('"Hi,'+ name.title(),'"')
+      typewriter('Where would you like to go first? The Lace market, The rides, or The farm shop?')
       travel = input()
       while True:
           if travel.lower().strip() != "the lace market" and travel.lower().strip() != "the rides" and travel.lower().strip() != "the farm shop":
@@ -31,8 +31,9 @@ def game_start():
       walk()
 
 def walk():
-      typewriter('...\n')
-      typewriter('"STOP! DO NOT GO ANY FURTHER"', '"Sorry, we are now closing..."')
+      typewriter('...')
+      typewriter('"STOP! DO NOT GO ANY FURTHER"\
+       "Sorry, we are now closing..."')
       first_location()
 
 def first_location():
@@ -45,11 +46,12 @@ def first_location():
       of Merrymeadow, had been discovered dead within her regal tent, her crown askew and a \
       haunting mystery in the air.')
      typewriter('Are you ready to uncover the truth of Merrymeadow?...')
-     typewriter('Lady Amara was discovered by her daughter in law Clara.\n', '"Hmmm, I wonder if Clara knows anything."')
+     typewriter('Lady Amara was discovered by her daughter in law Clara.')
+     typewriter("Hmmm, I wonder if Clara knows anything.")
      accept = input('Find Clara? Y/N\n')
      while True: 
           if accept.lower().strip() != "y" and accept.lower().strip() != "n":
-               print("Sorry, I didn't quit catch that...Please try again")
+               print("Sorry, I didn't quite catch that...Please try again")
                accept = input('Find Clara? Y/N\n')
           else : 
                break
@@ -71,8 +73,8 @@ def find_clara():
      #Bite video tutorial used to help write while loops
      while True: 
           if question_answer.lower().strip() != "where" and question_answer.lower().strip() != "who":
-               print("Sorry, I didn't quit catch that...Please try again\n")
-               question_answer = input('where or who?')
+               print("Sorry, I didn't quit catch that...Please try again")
+               question_answer = input('Where or who? \n')
           else : 
                break
 
@@ -83,7 +85,8 @@ def find_clara():
           my allowence. The sad thing is I now have no mother and a huge allowence."')
           typewriter("Hmm, someone must have seen her.")
           typewriter('"Did anyone see you Clara?"')
-          typewriter('"I did say hi to the major, but he was probably too busy to see me. He looked like he was in a rush."')
+          typewriter('"I did say hi to the major, but he was probably too busy to see me. \
+          He looked like he was in a rush."')
           typewriter("Adding Clara to list of suspects...")
           suspects.append("Clara")
           print("Going to find the major...")
@@ -111,7 +114,8 @@ def find_the_major():
                break
 
      if thought.lower().strip() == "y":
-          typewriter('"Ha! I was at the funfair... and she was fine when I saw her... I mean... The day before, we ran though the finaces!"')
+          typewriter('"Ha! I was at the funfair... and she was fine when I saw her... I mean... \
+          The day before, we ran though the finaces!"')
           second_thought = input("Ask another question? Y/N\n")
           while True: 
                if second_thought.lower().strip() != "y" and second_thought.lower().strip() != "n":
@@ -154,7 +158,7 @@ def find_count_crispin():
 
      if count_question.lower().strip() == "y":
           typewriter('"I can not believe you would be this insenstive. I was with my wife.\
-           Until..."', '"Until...that man decided decided to surprise her with breakfast in the \
+           Until... Until...that man decided decided to surprise her with breakfast in the \
            tent. That is when I found out about the affair."')
           second = input("Ask another question? Y/N\n")
           while True: 
@@ -168,12 +172,13 @@ def find_count_crispin():
                typewriter('"Sir, did you get angry?"')
                typewriter('"Of course I got angry. Anyone would! I still am. That was my wife! \
                I dont remember much about that morning. I stormed off after I found them."')
-               typewriter("Adding Count Chrispin to list of suspects...")
+               print("Adding Count Chrispin to list of suspects...")
                suspects.append("Count Chrispin")
                recall_suspects()
           elif second.lower().strip() == "n":
-               print('"I better get going."')
-               print("hmmm, if that were me I would get pretty angry. Maybe it was a crime of passion?... Adding Count Chrispin to list of suspects...")
+               typewriter('"I better get going."')
+               print("hmmm, if that were me I would get pretty angry. Maybe it was a crime of passion?... \
+               I'll add Count Chrispin to the list of suspects...")
                suspects.append("Count Chrispin")
                recall_suspects()
 
@@ -193,29 +198,21 @@ def recall_suspects():
 def finale():
      typewriter('"so, you think the murderer was"', guilty)
      if guilty == "major":
-          print('"Okay! I confess! It was me! She was going to expose us, so I put posin in her \
+          typewriter('"Okay! I confess! It was me! She was going to expose us, so I put poison in her \
           breakfast. I would have lost everything!"')
      if guilty == "count chrispin":
-          print("But Count Chrispin was not the last to see Lady Amara, he stormed off. \
+          typewriter("But Count Chrispin was not the last to see Lady Amara, he stormed off. \
           It can't have been him.")
      if guilty == "clara":
-          print("Clara was seen by a lot of people at the funfair. She's such a public figure, \
+          typewriter("Clara was seen by a lot of people at the funfair. She's such a public figure, \
           she was not reported any where near her mums tent.")
-     typewriter('The Major was charged for the murder of Lady Amara. Traces of posin were found \
+     typewriter('The Major was charged for the murder of Lady Amara. Traces of poison were found \
      in the autopsy. A letter addressed to the major was found on the corpse.')
      typewriter('To my dearest Carter, I have to come clean to my husband. Our secret is killing \
      me. I will love you always.')
-     quit()
+     print("Game over! Thanks for playing!")
 
-# main game functions
 def main():
      game_start()
-     walk()
-     first_location()
-     find_clara()
-     find_the_major()
-     find_count_crispin()
-     recall_suspects()
-     finale()
 
 main()
