@@ -82,8 +82,7 @@ def find_clara():
     question_answer = input('Where or who?\n')
     # Bite video tutorial used to help write while loops
     while True:
-        if question_answer.lower().strip() != "where" and
-        question_answer.lower().strip() != "who":
+        if question_answer.lower().strip() != "where" and question_answer.lower().strip() != "who":
             print("Sorry, I didn't quit catch that...Please try again \n")
             question_answer = input('Where or who? \n')
         else:
@@ -135,8 +134,7 @@ def find_the_major():
         saw her... I mean...The day before, we ran though the finaces!"\n')
         second_thought = input("Ask another question? Y/N\n")
         while True:
-            if second_thought.lower().strip() != "y" and
-            second_thought.lower().strip() != "n":
+            if second_thought.lower().strip() != "y" and second_thought.lower().strip() != "n":
                 print("Sorry, I didn't quit catch that...Please try again\n")
                 second_thought = input("Ask another question? Y/N\n")
             else:
@@ -173,8 +171,7 @@ def find_count_crispin():
     morning she died? Y/N\n")
     # Bite video tutorial used to help write while loops
     while True:
-        if count_question.lower().strip() != "y" and
-        count_question.lower().strip() != "n":
+        if count_question.lower().strip() != "y" and count_question.lower().strip() != "n":
             print("Sorry, I didn't quit catch that...Please try again")
             count_question = input("Question Count Crispin on his whereabouts \
             the morning she died? Y/N\n")
@@ -217,9 +214,7 @@ def recall_suspects():
     # User will type who is guilty here
     guilty = input('Who do you think is guilty?...\n')
     while True:
-        if guilty.lower().strip() != "count chrispin" and
-        guilty.lower().strip() != "Clara" and
-        guilty.lower().strip() != "major":
+        if guilty.lower().strip() != "count chrispin" and guilty.lower().strip() != "Clara" and guilty.lower().strip() != "major":
             print("Did you spell their names correctly? Please try again.\n")
             guilty = input('Who do you think is guilty?...\n')
         else:
