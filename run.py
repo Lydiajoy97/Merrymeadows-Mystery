@@ -165,9 +165,9 @@ def find_the_major():
         typewriter("'Look, I can't comment on this without my lawer present. Please \
         leave. If I were you I would talk to the husband.'")
         print("Adding the Major to list of suspects...")
-            suspects.append("The Major")
-            print("Going to find Count Chrispin...")
-            find_count_crispin()
+        suspects.append("The Major")
+        print("Going to find Count Chrispin...")
+        find_count_crispin()
 
 
 # Third Suspect Count Crispin
