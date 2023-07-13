@@ -239,6 +239,7 @@ def recall_suspects():
             guilty = input('Who do you think is guilty?...\n')
         else:
             break
+    finale()
 
 
 # suspect reveal
