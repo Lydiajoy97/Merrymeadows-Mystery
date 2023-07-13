@@ -31,10 +31,15 @@ I want to play a simple murder mystrey game that gives me a chance to guess the 
 I want to be able to recall my suspects which will help me decide who the murderer is. 
 
 # Features 
+A murder mystry game with the following features:
+1. To input name.
+2. To ask characters questions and travel to different locations in the story
+3. To add to the list of subjects.
+4. To recall the list of subjects.
+5. To find out the winner by if statements.
 
 # Structure-Plan:
 
-# Wireframes 
 
 # Design-and-Color-Scheme
 
@@ -42,6 +47,11 @@ This game is developed as a line based terminal game, so has little desgin featu
 One design effect that I would like to have is for the script to be printed with a type writter effect. This will allow the user to feel like the game is happening in real time, and help with overall engagement.
 
 One thing I would like to add as a future development is different color text for each of the characters so that the user can read the script easily and determine what character is talking.
+
+# Future developments 
+1. Font color on the text for different characters. 
+2. Place the story into a seperate file and keep the python functions seperate to the story. At the moment the code is long becase of the story, so keeping it seperate would make it more readable.
+3. Add a exemption to the name input so that users can't put special characters. This would help to make the game more secure.
 
 # Testing-and-Results 
 Strategy:
@@ -51,17 +61,22 @@ Strategy:
 4. Check the most recent version has been pushed to Heroku.
 5. Pass through a Python Validator with no errors.
 
-Summary:
+You can veiw the results of my testing here on the google document I created.
+https://docs.google.com/document/d/1_PVs5LhTYNiocsasF_uQ_GCthLA-PxxgSMeJVZMnzhY/edit?usp=sharing 
 
 Testing Results:
 
 Code was passed through the CI Python Linter validator. 
 At first there was issues with white spaces and indentations on most lines. 
-All errors were then fixed and it now passes through the Validator.
+The only errors that pass through now are that some of the if condition lines are too long. When I attempted to fix it using the \ it would not recognise that the line belonged to the one above as I had to add an indentation. 
+After doing this the code is now fixed with no errors. 
+
+![image](/workspace/Merrymeadows-Mystery/Picture1.png)
 
 # Deployment 
 This Code is depolyed to Heroku. 
 To do this I opened an Heroku account and clicked the add app feature. I then linked the account to my git hub pages and deplyed the game.
+I clicked automatic deploys so that when I git push to the main it will update in the heroku app as well.
 
 # Credits 
 
@@ -70,3 +85,5 @@ https://www.geeksforgeeks.org/python-multi-line-statements/
 
 For while loops tutorial:
 https://www.youtube.com/watch?v=AWcdk5uoxeg
+
+# Acknowleadements 
