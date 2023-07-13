@@ -39,6 +39,8 @@ A murder mystry game with the following features:
 5. To find out the winner by if statements.
 
 # Structure-Plan:
+I created a flow chart for this game so that I could plan the conditions well and know where the game flow was going. This helped me to write my if conditions. 
+Below is the picture of my plan.
 
 
 # Design-and-Color-Scheme
@@ -86,4 +88,11 @@ https://www.geeksforgeeks.org/python-multi-line-statements/
 For while loops tutorial:
 https://www.youtube.com/watch?v=AWcdk5uoxeg
 
+For the typewriter
+https://pythonprogramming.altervista.org/typewriter-effect-on-the-console/ 
+
+https://peps.python.org/pep-0008/
+
 # Acknowleadements 
+
+Thank you 

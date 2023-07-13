@@ -1,4 +1,4 @@
-# typewriter effect for story script
+# typewriter effect for story script with website tutorial.
 import time
 import sys
 
@@ -10,7 +10,7 @@ def typewriter(text, delay=0.1):
         time.sleep(delay)
 
 
-# List of suspects that user will add to throught the game.
+# List of suspects that user will add to throught the game and recall at the end.
 suspects = []
 
 
@@ -45,6 +45,7 @@ def walk():
 
 
 def first_location():
+    # story concept written below using chatGPT
     typewriter('Amidst the radiant sunbeams that bathed the vibrant medieval \
     fairgrounds of MerryMeadow, the joyful atmosphere of the fair seemed \
     unbreakable. Colorful pennants fluttered merrily in the breeze, mingling \
@@ -235,7 +236,7 @@ def find_count_crispin():
 
 # User can recall suspects and guess whose guilty
 def recall_suspects():
-    typewriter('Okay.. who are my suspects...', suspects)
+    print('Okay.. who are my suspects...', suspects)
     # User will type who is guilty here
     finale()
 
@@ -271,7 +272,7 @@ def finale():
 
 
 def main():
-    game_start()
+    recall_suspects()
 
 
 main()
