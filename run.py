@@ -161,6 +161,14 @@ def find_the_major():
             print("Going to find Count Crispin...")
             find_count_crispin()
 
+    if thought.lower().strip() == "n":
+        typewriter("'Look, I can't comment on this without my lawer present. Please \
+        leave. If I were you I would talk to the husband.'")
+        print("Adding the Major to list of suspects...")
+            suspects.append("The Major")
+            print("Going to find Count Chrispin...")
+            find_count_crispin()
+
 
 # Third Suspect Count Crispin
 def find_count_crispin():
@@ -207,6 +215,17 @@ def find_count_crispin():
             list of suspects...")
             suspects.append("Count Chrispin")
             recall_suspects()
+    
+    if count_question.lower().strip() == "n":
+        typewriter('"You know, what I like about you is that you \
+        are sensitive. Not grilling me about my died wife! \
+        I wish none of this happened. I wish I had not walked in on \
+        them... I wish she was here."')
+        typewriter('"I better get going. You have a lot on your plate."\n')
+        print("hmmm, them? Maybe it was a crime of passion?... \
+        I'll add Count Chrispin to my list of suspects...")
+        suspects.append("Count Chrispin")
+        recall_suspects()
 
 
 # User can recall suspects and guess whose guilty
