@@ -234,7 +234,7 @@ def recall_suspects():
     # User will type who is guilty here
     guilty = input('Who do you think is guilty?...\n')
     while True:
-        if guilty.lower().strip() != "count chrispin" and guilty.lower().strip() != "Clara" and guilty.lower().strip() != "major":
+        if guilty.lower().strip() != "count chrispin" and guilty.lower().strip() != "clara" and guilty.lower().strip() != "major":
             print("Did you spell their names correctly? Please try again.\n")
             guilty = input('Who do you think is guilty?...\n')
         else:
