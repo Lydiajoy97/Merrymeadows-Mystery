@@ -100,7 +100,8 @@ def find_clara():
         suspects.append("Clara")
         print("Going to find the major...")
         find_the_major()
-    elif question_answer.lower().strip() == "who":
+    
+    if question_answer.lower().strip() == "who":
         typewriter('"I did say hi to the major, but he was probably too busy \
         to see me. He looked like he was in a rush."\n')
         print("Adding Clara to list of suspects...")
@@ -150,7 +151,8 @@ def find_the_major():
             typewriter('I think I need to pay her husband a visit..\n')
             print("Going to find Count Chrispin...")
             find_count_crispin()
-        elif second_thought.lower().strip() == "n":
+
+        if second_thought.lower().strip() == "n":
             typewriter('"I do not want to cause any drama, but you should \
             probably talk to her husband. He was pretty angry after finding \
             out Lady Amara and I....Nevermind! Ignore me!"\n')
@@ -197,7 +199,8 @@ def find_count_crispin():
             print("Adding Count Chrispin to list of suspects...")
             suspects.append("Count Chrispin")
             recall_suspects()
-        elif second.lower().strip() == "n":
+
+        if second.lower().strip() == "n":
             typewriter('"I better get going."\n')
             print("hmmm, if that were me I would get pretty angry. \
             Maybe it was a crime of passion?...I'll add Count Chrispin to the \
