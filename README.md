@@ -42,6 +42,7 @@ A murder mystry game with the following features:
 I created a flow chart for this game so that I could plan the conditions well and know where the game flow was going. This helped me to write my if conditions. 
 Below is the picture of my plan.
 
+![flowchart](documentation/flowchart.jpg)
 
 # Design-and-Color-Scheme
 
@@ -68,12 +69,15 @@ https://docs.google.com/document/d/1_PVs5LhTYNiocsasF_uQ_GCthLA-PxxgSMeJVZMnzhY/
 
 Testing Results:
 
+![testing](documentation/test.png)
+![testing](documentation/test2.png)
+
 Code was passed through the CI Python Linter validator. 
 At first there was issues with white spaces and indentations on most lines. 
 The only errors that pass through now are that some of the if condition lines are too long. When I attempted to fix it using the \ it would not recognise that the line belonged to the one above as I had to add an indentation. 
 After doing this the code is now fixed with no errors. 
 
-![image](/workspace/Merrymeadows-Mystery/Picture1.png)
+![image](documentation/screenshot.png)
 
 # Deployment 
 This Code is depolyed to Heroku. 
@@ -95,4 +99,4 @@ https://peps.python.org/pep-0008/
 
 # Acknowleadements 
 
-Thank you 
+Thank you so much to my mentor Ronan for all your help, guidence and encouragment. Thanks for believeing in me and in my game devlopment dreams!
