@@ -223,15 +223,20 @@ def find_count_crispin():
         them... I wish she was here."')
         typewriter('"I better get going. You have a lot on your plate."\n')
         print("hmmm, them? Maybe it was a crime of passion?... \
-        I'll add Count Chrispin to my list of suspects...")
+        I'll add Count Chrispin to my list of suspects...\n")
         suspects.append("Count Chrispin")
         recall_suspects()
 
 
 # User can recall suspects and guess whose guilty
 def recall_suspects():
-    print('Okay.. who are my suspects...', suspects)
+    typewriter('Okay.. who are my suspects...', suspects)
     # User will type who is guilty here
+    finale()
+
+
+# suspect reveal
+def finale():
     guilty = input('Who do you think is guilty?...\n')
     while True:
         if guilty.lower().strip() != "count chrispin" and guilty.lower().strip() != "clara" and guilty.lower().strip() != "major":
@@ -239,12 +244,6 @@ def recall_suspects():
             guilty = input('Who do you think is guilty?...\n')
         else:
             break
-    finale()
-
-
-# suspect reveal
-def finale():
-    typewriter('"so, you think the murderer was"', guilty)
     if guilty == "major":
         typewriter('"Okay! I confess! It was me! She was going to expose us, \
         so I put poison in her breakfast. I would have lost everything!"')
@@ -263,9 +262,7 @@ def finale():
     the major. I am sorry amd I will love you always.')
     print("Game over! Thanks for playing!")
 
-
 def main():
     game_start()
-
 
 main()
