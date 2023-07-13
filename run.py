@@ -28,8 +28,8 @@ def game_start():
         if travel.lower().strip() != "the lace market" and travel.lower().strip() != "the rides" and travel.lower().strip() != "the farm shop":
             print("Did you spell the places correctly? Please try again.")
             travel = input('Where would you like to go?...\n')
-            else:
-                break
+        else:
+            break
     typewriter('"Great! Lets go!"')
     print('Heading to ' + travel)
     walk()
