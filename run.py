@@ -272,7 +272,7 @@ def finale():
 
 
 def main():
-    recall_suspects()
+    game_start()
 
 
 main()
