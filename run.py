@@ -100,7 +100,7 @@ def find_clara():
         suspects.append("Clara")
         print("Going to find the major...")
         find_the_major()
-    
+
     if question_answer.lower().strip() == "who":
         typewriter('"I did say hi to the major, but he was probably too busy \
         to see me. He looked like he was in a rush."\n')
@@ -162,8 +162,8 @@ def find_the_major():
             find_count_crispin()
 
     if thought.lower().strip() == "n":
-        typewriter("'Look, I can't comment on this without my lawer present. Please \
-        leave. If I were you I would talk to the husband.'")
+        typewriter("'Look, I can't comment on this without my lawer present. \
+        Please leave. If I were you I would talk to the husband.'")
         print("Adding the Major to list of suspects...")
         suspects.append("The Major")
         print("Going to find Count Chrispin...")
@@ -215,7 +215,7 @@ def find_count_crispin():
             list of suspects...")
             suspects.append("Count Chrispin")
             recall_suspects()
-    
+
     if count_question.lower().strip() == "n":
         typewriter('"You know, what I like about you is that you \
         are sensitive. Not grilling me about my died wife! \
@@ -262,7 +262,9 @@ def finale():
     the major. I am sorry amd I will love you always.')
     print("Game over! Thanks for playing!")
 
+
 def main():
     game_start()
+
 
 main()
