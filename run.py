@@ -260,7 +260,7 @@ def finale():
             guilty = input('Who do you think is guilty?...\n')
         else:
             break
-    if guilty == "major":
+    if guilty == "the major":
         typewriter('"Okay! I confess! It was me! She was going to expose us, '
                    'so I put poison in her breakfast. I would have lost '
                    'everything!"')
