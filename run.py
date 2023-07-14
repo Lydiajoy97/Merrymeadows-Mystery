@@ -264,7 +264,7 @@ def finale():
         'her mums tent.')
     typewriter('The Major was charged for the murder of Lady Amara. '
     'Traces of poison were found in the autopsy. '
-    'A letter addressed to the major was found on the corpse.\n')
+    'A letter addressed to Count Chrispin was found on the corpse.\n')
     typewriter('"To my dearest Carter, I have to come clean to you, my '
     'husband. Our secret is killing me. I have been having an affair with '
     'the major. I am sorry amd I will love you always."\n')
