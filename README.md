@@ -73,9 +73,8 @@ Testing Results:
 ![testing](documentation/test2.png)
 
 Code was passed through the CI Python Linter validator. 
-At first there was issues with white spaces and indentations on most lines. 
-The only errors that pass through now are that some of the if condition lines are too long. When I attempted to fix it using the \ it would not recognise that the line belonged to the one above as I had to add an indentation. 
-After doing this the code is now fixed with no errors. 
+At first there was issues with white spaces and indentations on most lines. after adding a backslash the code app who show large spaces in the terminal window, so I have since replaced that with an apostrophe to indicate a new line in the print statements.
+The code is now fixed with no errors. 
 
 ![image](documentation/screenshot.png)
 
