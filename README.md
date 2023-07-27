@@ -96,6 +96,9 @@ https://pythonprogramming.altervista.org/typewriter-effect-on-the-console/
 
 https://peps.python.org/pep-0008/
 
+Opening story concept:
+https://chat.openai.com/ 
+
 # Acknowleadements 
 
 Thank you so much to my mentor Ronan for all your help, guidence and encouragment. Thanks for believeing in me and in my game devlopment dreams!
